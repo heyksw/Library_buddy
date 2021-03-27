@@ -16,7 +16,15 @@
         android:orientation="vertical"
         android:gravity="top"
         android:background="#3c5fcf"
+
        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="정석학술정보관"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -34,7 +42,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
                 android:orientation="horizontal"
-                />
+                android:gravity="center"
+                >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/inha"
+                android:background="@drawable/image_round"/>
+        </LinearLayout>
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,17 +133,127 @@
             android:gravity="top"
             android:background="#3c5fcf"
             >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:background="#3c5fcf"
+            />
     </LinearLayout>
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:orientation="vertical"
-        android:gravity="top"
         android:background="#1a3c5fcf"
-        >
-    </LinearLayout>
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ex1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/button_round2"
+            app:backgroundTint="#999393"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/ex2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/button_round2"
+            app:backgroundTint="#e8adb6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <Button
+            android:id="@+id/ex3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/button_round2"
+            app:backgroundTint="#d1d6f0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.inha.longstone.CustomView
+            android:id="@+id/custom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.201"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.305"></com.inha.longstone.CustomView>
+
+        <com.inha.longstone.CustomView
+            android:id="@+id/custom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.201"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom1"
+            app:layout_constraintVertical_bias="0.378"></com.inha.longstone.CustomView>
+
+        <com.inha.longstone.CustomView
+            android:id="@+id/custom3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toEndOf="@+id/custom1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.303"></com.inha.longstone.CustomView>
+
+        <com.inha.longstone.CustomView
+            android:id="@+id/custom4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/custom2"
+            app:layout_constraintTop_toBottomOf="@+id/custom3"></com.inha.longstone.CustomView>
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn1"-->
+        <!--            android:layout_width="220dp"-->
+        <!--            android:layout_height="220dp"-->
+        <!--            android:background="@drawable/button_round"-->
+        <!--            app:backgroundTint="#3C5FCF" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
