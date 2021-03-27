@@ -163,10 +163,10 @@
             app:backgroundTint="#999393"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.34"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.013" />
 
         <Button
             android:id="@+id/ex2"
@@ -179,10 +179,10 @@
             app:backgroundTint="#e8adb6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.004" />
+            app:layout_constraintVertical_bias="0.011" />
 
         <Button
             android:id="@+id/ex3"
@@ -195,10 +195,10 @@
             app:backgroundTint="#d1d6f0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintHorizontal_bias="0.689"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.009" />
 
         <com.inha.longstone.CustomView
             android:id="@+id/custom1"
@@ -254,7 +254,6 @@
         <!--            android:background="@drawable/button_round"-->
         <!--            app:backgroundTint="#3C5FCF" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </LinearLayout>
