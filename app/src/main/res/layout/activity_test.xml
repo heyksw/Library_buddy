@@ -151,7 +151,7 @@
         android:background="#1a3c5fcf"
         android:gravity="center"
         android:orientation="vertical">
-
+ 
         <Button
             android:id="@+id/ex1"
             android:layout_width="45dp"
