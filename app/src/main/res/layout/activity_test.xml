@@ -31,7 +31,7 @@
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="3.5"
         android:orientation="vertical"
         android:gravity="top"
         android:background="@drawable/image2"
@@ -143,6 +143,9 @@
             />
     </LinearLayout>
 
+
+    <!-- 테이블 부분 -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout4"
         android:layout_width="match_parent"
@@ -151,7 +154,7 @@
         android:background="#1a3c5fcf"
         android:gravity="center"
         android:orientation="vertical">
- 
+
         <Button
             android:id="@+id/ex1"
             android:layout_width="45dp"
@@ -160,6 +163,9 @@
             android:layout_marginEnd="28dp"
             android:layout_marginRight="28dp"
             android:background="@drawable/button_round2"
+            android:padding="1dp"
+            android:text="이용중"
+            android:textSize="10dp"
             app:backgroundTint="#999393"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -176,13 +182,18 @@
             android:layout_marginEnd="28dp"
             android:layout_marginRight="28dp"
             android:background="@drawable/button_round2"
+            android:padding="1dp"
+            android:text="의심좌석"
+            android:textSize="10dp"
             app:backgroundTint="#e8adb6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.011" />
+            app:layout_constraintVertical_bias="0.011"
+
+            />
 
         <Button
             android:id="@+id/ex3"
@@ -192,13 +203,18 @@
             android:layout_marginEnd="28dp"
             android:layout_marginRight="28dp"
             android:background="@drawable/button_round2"
-            app:backgroundTint="#d1d6f0"
+            android:padding="1dp"
+            android:text="이용가능"
+            android:textSize="10dp"
+            app:backgroundTint="#B4BADC"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.689"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.009" />
+            app:layout_constraintVertical_bias="0.009"
+
+            />
 
         <com.inha.longstone.CustomView
             android:id="@+id/custom1"
@@ -255,5 +271,42 @@
         <!--            app:backgroundTint="#3C5FCF" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#B4BADC"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            >
+
+        </Button>
+        <Button
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+
+            android:background="@drawable/home"
+            >
+
+        </Button>
+        <Button
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp">
+
+        </Button>
+    </LinearLayout>
 
 </LinearLayout>
