@@ -1,35 +1,33 @@
 package com.inha.longstone;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class TestActivity extends AppCompatActivity {
-
     private BottomNavigationView bottomNavigationView;  //바텀 네비게이션 뷰
     private FragmentManager fm;
     private FragmentTransaction ft;
     private Frag_chart frag_chart;
     private Frag_home frag_home;
     private Frag_mypage frag_mypage;
+    android.app.FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-//        // 버튼 비활성화 코드
-//        Button btn =(Button)findViewById(R.id.btn1);
-//        btn.setEnabled(false);
-
-        final CustomView indicator2 = (CustomView) findViewById(R.id.custom);
+        // 버튼 비활성화 코드
+        //Button btn =(Button)findViewById(R.id.btn1);
+        //btn.setEnabled(false);
+        final CustomView indicator2 = (CustomView) findViewById(R.id.custom1);
 
         bottomNavigationView = findViewById(R.id.navi);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -55,7 +53,6 @@ public class TestActivity extends AppCompatActivity {
         frag_mypage = new Frag_mypage();
 
         setFrag(1);  // 첫 화면은 home
-
     }
 
     private void setFrag(int n){
