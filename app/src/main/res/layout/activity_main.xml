@@ -18,6 +18,13 @@
 
         android:text="테스트 페이지로 이동"/>
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        class ="com.google.android.gms.maps.SupportMapFragment" />
+
 
 
 </LinearLayout>
