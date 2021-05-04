@@ -1,20 +1,24 @@
 package com.inha.longstone;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     private GoogleMap mMap;
 
@@ -95,7 +99,23 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .position(Jeju)
                 .title("제주도"));
 
+        // 리스너 지정
+        mMap.setOnMarkerClickListener(this);
 
+    }   //onMapReady
+
+
+    @Override
+    public boolean onMarkerClick(@NonNull Marker marker) {
+
+        if(marker.getTitle().equals("서울")){
+            Toast.makeText(this,"도서관 정보",Toast.LENGTH_LONG).show();
+        }
+        return true;
+    }
+
+    void show(){
 
     }
+
 }
