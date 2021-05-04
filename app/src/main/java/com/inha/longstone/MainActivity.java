@@ -61,10 +61,40 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions()
                 .position(Seoul)
                 .title("서울"));
-        // Map 초기 위치를 서울로
+        // Map 초기 카메라 위치를 서울로
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Seoul));
 
         // 1.서울 2.경기도 3.강원도 4.충청남도 5.충청북도 6.전라남도 7.전라북도 8.제주도
+        LatLng Gyeonggi = new LatLng(37.32, 127.4);
+        LatLng Gangwon = new LatLng(37.81, 128.19);
+        LatLng Chungcheongnamdo = new LatLng(36.54, 127.04);
+        LatLng Chungcheongbukdo = new LatLng(36.89, 127.73);
+        LatLng Jeollanamdo = new LatLng(35.12, 127.02);
+        LatLng Jeollabukmdo = new LatLng(35.8, 127.11);
+        LatLng Jeju = new LatLng(33.37, 126.53);
+
+        mMap.addMarker(new MarkerOptions()
+                .position(Gyeonggi)
+                .title("경기도"));
+        mMap.addMarker(new MarkerOptions()
+                .position(Gangwon)
+                .title("강원도"));
+        mMap.addMarker(new MarkerOptions()
+                .position(Chungcheongnamdo)
+                .title("충청남도"));
+        mMap.addMarker(new MarkerOptions()
+                .position(Chungcheongbukdo)
+                .title("충청북도"));
+        mMap.addMarker(new MarkerOptions()
+                .position(Jeollanamdo)
+                .title("전라남도"));
+        mMap.addMarker(new MarkerOptions()
+                .position(Jeollabukmdo)
+                .title("전라북도"));
+        mMap.addMarker(new MarkerOptions()
+                .position(Jeju)
+                .title("제주도"));
+
 
 
     }
