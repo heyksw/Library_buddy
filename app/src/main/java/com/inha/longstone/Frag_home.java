@@ -69,7 +69,7 @@ public class Frag_home extends Fragment {
         tv3 = (TextView) view.findViewById(R.id.total);
 
         Frag_home.JsonParse jsonParse = new Frag_home.JsonParse();      // AsyncTask 생성
-        jsonParse.execute("http://192.168.1.15/SelectAllPost.php");
+        jsonParse.execute("http://192.168.219.116/SelectAllPost.php");
         return view;
     }
     public class JsonParse extends AsyncTask<String, Void, String> {

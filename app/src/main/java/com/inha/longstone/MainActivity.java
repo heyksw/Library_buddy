@@ -2,7 +2,10 @@ package com.inha.longstone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,6 +26,19 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+        // 05.04 버튼 다시 추가
+        Button imageButton = (Button) findViewById(R.id.btn1);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     /**
@@ -40,10 +56,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
+        // 서울의 위도 경도
+        LatLng Seoul = new LatLng(37.41, 127);
         mMap.addMarker(new MarkerOptions()
-                .position(sydney)
-                .title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                .position(Seoul)
+                .title("서울"));
+        // Map 초기 위치를 서울로
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Seoul));
+
+        // 1.서울 2.경기도 3.강원도 4.충청남도 5.충청북도 6.전라남도 7.전라북도 8.제주도
+
+
     }
 }
