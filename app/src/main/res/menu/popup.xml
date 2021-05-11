@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/action_menu1"
-        android:title="메뉴 1" />
+        android:title="인하대학교" />
     <item
         android:id="@+id/action_menu2"
-        android:title="메뉴 2" />
+        android:title="인천대학교" />
     <item
         android:id="@+id/action_menu3"
-        android:title="메뉴 3" />
+        android:title="가천대학교" />
 
 </menu>

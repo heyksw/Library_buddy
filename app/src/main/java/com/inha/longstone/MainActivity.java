@@ -43,16 +43,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
 
 
-        // 05.04 버튼 다시 추가
-        Button imageButton = (Button) findViewById(R.id.btn1);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TestActivity.class);
-                startActivity(intent);
-            }
-        });
+//        // 05.04 버튼 다시 추가
+//        Button imageButton = (Button) findViewById(R.id.btn1);
+//        imageButton.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 
@@ -156,6 +156,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         @Override
                         public void onClick(View v) {
 
+                        }
+                    }).show();
+        }
+
+        else if(marker.getTitle().equals("경기도")){
+            //Toast.makeText(this,"도서관 정보",Toast.LENGTH_LONG).show();
+
+            Snackbar.make(findViewById(R.id.map),"인하대학교",Snackbar.LENGTH_INDEFINITE)
+                    .setAction("OK",new View.OnClickListener(){
+
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                            startActivity(intent);
                         }
                     }).show();
         }

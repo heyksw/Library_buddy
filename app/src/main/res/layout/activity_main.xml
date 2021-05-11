@@ -10,13 +10,13 @@
     android:background="#FFFFFF"
     >
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/my_blue"
+<!--    <Button-->
+<!--        android:id="@+id/btn1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/my_blue"-->
 
-        android:text="테스트 페이지로 이동"/>
+<!--        android:text="테스트 페이지로 이동"/>-->
 
     <fragment
         android:layout_width="match_parent"
