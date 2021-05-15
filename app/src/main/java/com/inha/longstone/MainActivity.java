@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         else if(marker.getTitle().equals("인천")){
             //Toast.makeText(this,"도서관 정보",Toast.LENGTH_LONG).show();
 
-            Snackbar.make(findViewById(R.id.map),"인하대학교",Snackbar.LENGTH_INDEFINITE)
+            Snackbar.make(findViewById(R.id.map),"인천 리스트",Snackbar.LENGTH_INDEFINITE)
                     .setAction("OK",new View.OnClickListener(){
 
                         @Override
