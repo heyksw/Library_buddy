@@ -4,18 +4,198 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:backgroundTint="#FFFFFF"
+    android:layout_gravity="center"
 
     tools:context=".TestActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3c5fcf"
+        android:gravity="top"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="My page"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.5"
+        android:background="#DEE3EF"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="마이 페이지 입니다."
-        android:textSize="40dp"
-        android:textColor="#000000"
-        />
+        >
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#DEE3EF"
+            >
+
+            <LinearLayout
+                android:id="@+id/사용자정보"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:background="@drawable/frame_round"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cat"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="              롱스톤\nlongstone@naver.com"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center_horizontal"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/좌석정보"
+                android:layout_width="350dp"
+                android:layout_height="130dp"
+                android:background="@drawable/frame_round"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="좌석정보"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="0dp"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="인하대학교\n정석학술정보관 - 제1열람실 / 113"
+                    android:textColor="#9C9EF4"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"></TextView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/two"
+                android:layout_width="350dp"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/이용시간"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/frame_round"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:text="이용시간"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:layout_margin="10dp"
+                                ></TextView>
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:text="  03:43:55"
+                                android:textColor="#9C9EF4"
+                                android:textSize="25dp"
+                                android:layout_margin="0dp"
+                                android:layout_gravity="center"
+                                ></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/이용상태"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/frame_round"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="175dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:text="이용상태"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:layout_margin="10dp"
+                                ></TextView>
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:text="     사용중"
+                                android:textColor="#E14990"
+                                android:textSize="25dp"
+                                android:layout_margin="0dp"
+                                android:layout_gravity="center"
+                                ></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#B4BADC"
+        android:orientation="horizontal"
+        ></LinearLayout>
 
 </LinearLayout>
+

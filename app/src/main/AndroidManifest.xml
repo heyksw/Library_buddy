@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LabActivity"></activity>
+        <activity android:name=".InhaList"></activity>
+        <activity android:name=".IncheonList" />
+        <activity android:name=".LabActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"

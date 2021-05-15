@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleMap mMap;
 
     // 1.서울 2.경기도 3.강원도 4.충청남도 5.충청북도 6.전라남도 7.전라북도 8.제주도
+    // 9.인천
     LatLng Seoul = new LatLng(37.41, 127);
     LatLng Gyeonggi = new LatLng(37.32, 127.4);
     LatLng Gangwon = new LatLng(37.81, 128.19);
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     LatLng Jeollanamdo = new LatLng(35.12, 127.02);
     LatLng Jeollabukmdo = new LatLng(35.8, 127.11);
     LatLng Jeju = new LatLng(33.37, 126.53);
+
+    LatLng Incheon = new LatLng(37.45,126.7);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +108,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .position(Jeju)
                 .title("제주도"));
 
+        mMap.addMarker(new MarkerOptions()
+                .position(Incheon)
+                .title("인천"));
+
+
         // 리스너 지정
         mMap.setOnMarkerClickListener(this);
 
@@ -170,6 +179,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                            startActivity(intent);
+                        }
+                    }).show();
+        }
+
+        else if(marker.getTitle().equals("인천")){
+            //Toast.makeText(this,"도서관 정보",Toast.LENGTH_LONG).show();
+
+            Snackbar.make(findViewById(R.id.map),"인하대학교",Snackbar.LENGTH_INDEFINITE)
+                    .setAction("OK",new View.OnClickListener(){
+
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(getApplicationContext(), IncheonList.class);
                             startActivity(intent);
                         }
                     }).show();
