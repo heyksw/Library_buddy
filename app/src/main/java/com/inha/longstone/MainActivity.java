@@ -138,12 +138,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         // 서울이라는 마커를 클릭했을 때
         if(marker.getTitle().equals("서울")){
             //Toast.makeText(this,"도서관 정보",Toast.LENGTH_LONG).show();
-            Snackbar.make(findViewById(R.id.map),"서울 도서관 정보",Snackbar.LENGTH_INDEFINITE)
+            Snackbar.make(findViewById(R.id.map),"테스트 페이지",Snackbar.LENGTH_INDEFINITE)
                     .setAction("OK",new View.OnClickListener(){
 
                         @Override
                         public void onClick(View v) {
-
+                            Intent intent = new Intent(getApplicationContext(), LabActivity.class);
+                            startActivity(intent);
                         }
                     }).show();
         }
