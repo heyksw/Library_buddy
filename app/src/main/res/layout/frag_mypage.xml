@@ -27,14 +27,15 @@
             android:gravity="center"
             android:text="                  My page"
             android:textColor="#FFFFFF" />
-        <Button
+        <ImageButton
             android:id="@+id/swap"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="#919BF1"
+            android:src="@drawable/ic_baseline_camera_alt_24"
             android:layout_gravity="center">
 
-        </Button>
+        </ImageButton>
 "
     </LinearLayout>
 
