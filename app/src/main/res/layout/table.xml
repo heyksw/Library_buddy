@@ -5,7 +5,7 @@
     android:layout_width="135dp"
     android:layout_height="135dp"
     android:background="@drawable/button_round2"
-    android:backgroundTint="#3C5FCF">
+    android:backgroundTint="#4F6ED3">
 
 
     <Button
