@@ -1,5 +1,6 @@
 package com.inha.longstone;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -50,6 +51,17 @@ public class Frag_lab extends Fragment {
         tv = (TextView) view.findViewById(R.id.used);
         tv2 = (TextView) view.findViewById(R.id.usable);
         tv3 = (TextView) view.findViewById(R.id.total);
+
+
+        Button secret = (Button) view.findViewById(R.id.secret);
+        secret.setBackgroundDrawable(null);
+        secret.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //여기에 새로고침 구현
+
+            }
+        });
 
         Frag_lab.JsonParse jsonParse = new Frag_lab.JsonParse();      // AsyncTask 생성
         jsonParse.execute("http://192.168.219.116/SelectAllPost.php");
@@ -248,3 +260,4 @@ public class Frag_lab extends Fragment {
         }
     }
 }
+
