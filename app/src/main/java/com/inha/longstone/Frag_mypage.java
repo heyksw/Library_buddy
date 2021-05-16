@@ -34,6 +34,6 @@ public class Frag_mypage extends Fragment {
 
         return view;
 
-
+ 
     }
 }
