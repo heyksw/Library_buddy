@@ -74,33 +74,52 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="80dp"
                     android:background="#FFFFFF"
                     android:textColor="#000000"
                     android:orientation="horizontal"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="2dp"
                     >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/p1"
+                        android:layout_gravity="center"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:layout_marginLeft="15dp"
+                        >
 
+                    </ImageView>
 
                     <Button
                         android:id="@+id/button1"
-                        android:layout_width="match_parent"
+                        android:layout_width="300dp"
                         android:layout_height="match_parent"
                         android:background="#FFFFFF"
                         android:text="정석학술정보관"
                         android:textColor="#000000"
                         android:textSize="17dp"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+
 
                         ></Button>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/hart1"
+                        android:layout_gravity="center">
 
+                    </ImageView>
 
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="80dp"
                     android:background="#FFFFFF"
                     android:textColor="#000000"
                     android:orientation="horizontal"
@@ -108,37 +127,77 @@
                     android:layout_marginBottom="2dp"
 
                     >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/p2"
+                        android:layout_gravity="center"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:layout_marginLeft="15dp"
+                        >
 
+                    </ImageView>
                     <Button
                         android:id="@+id/button2"
-                        android:layout_width="match_parent"
+                        android:layout_width="300dp"
                         android:layout_height="match_parent"
                         android:text="60주년 기념관"
                         android:background="#FFFFFF"
                         android:textSize="17dp"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/hart1"
+                        android:layout_gravity="center">
+
+                    </ImageView>
 
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="80dp"
                     android:background="#FFFFFF"
                     android:textColor="#000000"
                     android:orientation="horizontal"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="2dp"
                     >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/p3"
+                        android:layout_gravity="center"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:layout_marginLeft="15dp">
 
+                    </ImageView>
                     <Button
                         android:id="@+id/button3"
-                        android:layout_width="match_parent"
+                        android:layout_width="300dp"
                         android:layout_height="match_parent"
                         android:text="하이테크센터"
                         android:background="#FFFFFF"
                         android:textSize="17dp"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/hart3"
+                        android:layout_gravity="center">
+
+                    </ImageView>
 
 
 
@@ -147,23 +206,41 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
+                    android:layout_height="80dp"
                     android:background="#FFFFFF"
                     android:textColor="#000000"
                     android:orientation="horizontal"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="2dp"
                     >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/p4"
+                        android:layout_gravity="center"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:layout_marginLeft="15dp">
 
+                    </ImageView>
                     <Button
                         android:id="@+id/button4"
-                        android:layout_width="match_parent"
+                        android:layout_width="300dp"
                         android:layout_height="match_parent"
-                        android:text="Test Activity"
+                        android:text="서호관"
                         android:background="#FFFFFF"
                         android:textSize="17dp"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"/>
 
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/hart1"
+                        android:layout_gravity="center">
+
+                    </ImageView>
 
 
 
