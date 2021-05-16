@@ -17,16 +17,25 @@
         android:layout_weight="1"
         android:background="#3c5fcf"
         android:gravity="top"
-        android:orientation="vertical"
+        android:orientation="horizontal"
 
         >
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="368dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="My page"
+            android:text="                  My page"
             android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/swap"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#919BF1"
+            android:layout_gravity="center">
+
+        </Button>
+"
     </LinearLayout>
 
 
@@ -138,7 +147,7 @@
                             <TextView
                                 android:layout_width="150dp"
                                 android:layout_height="50dp"
-                                android:text="  03:43:55"
+                                android:text="    03:43:55"
                                 android:textColor="#9C9EF4"
                                 android:textSize="25dp"
                                 android:layout_margin="0dp"
