@@ -14,7 +14,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,6 +28,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Frag_home extends Fragment {
     private View view;
@@ -69,7 +73,16 @@ public class Frag_home extends Fragment {
         tv3 = (TextView) view.findViewById(R.id.total);
 
         Frag_home.JsonParse jsonParse = new Frag_home.JsonParse();      // AsyncTask 생성
-        jsonParse.execute("http://192.168.219.116/SelectAllPost.php");
+
+        //TimerTask loadSeat = new TimerTask(){
+           // public void run(){
+                jsonParse.execute("http://192.168.0.2/SelectAllPost.php");
+           // }
+        //};
+
+        //Timer timer = new Timer();
+        //timer.schedule(loadSeat, 0, 5000);
+
         return view;
     }
     public class JsonParse extends AsyncTask<String, Void, String> {
@@ -119,9 +132,9 @@ public class Frag_home extends Fragment {
         protected void onPostExecute(String fromdoInBackgroundString) {
             super.onPostExecute(fromdoInBackgroundString);
             if(fromdoInBackgroundString == null) {
-                tv.setText("error");
-                tv2.setText("error");
-                tv3.setText("error");
+                tv.setText("Server");
+                tv2.setText("Connection");
+                tv3.setText("Error");
             }
             else {
                 jsonString = fromdoInBackgroundString;
@@ -230,7 +243,11 @@ public class Frag_home extends Fragment {
                 }else if(Integer.parseInt(seatArrayList.get(15).getS_state()) == 2) {
                     st16.setBackgroundTintList(ColorStateList.valueOf(0xFFE8ADB6) );
                 }
-
+                Button bar_button = view.findViewById(R.id.bar_button);
+                int length = bar_button.getLayoutParams().width/16;
+                ConstraintLayout.LayoutParams params= (ConstraintLayout.LayoutParams) bar_button.getLayoutParams();
+                params.width = length * used;
+                bar_button.setLayoutParams(params);
             }
         }
         @Override
@@ -263,5 +280,9 @@ public class Frag_home extends Fragment {
             }
             return tmpSeatArray;
         }
+    }
+    private void Refresh(){
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.detach(this).attach(this).commit();
     }
 }
