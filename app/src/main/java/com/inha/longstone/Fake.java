@@ -1,13 +1,12 @@
 package com.inha.longstone;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.content.Context;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,24 +15,13 @@ public class Fake extends AppCompatActivity {
     private FragmentManager fm;
     private FragmentTransaction ft;
     private Frag_chart frag_chart;
-    private Frag_home frag_home;
     private Frag_mypage frag_mypage;
-    private Frag_lab frag_lab;
     private Frag_fake frag_fake;
-    android.app.FragmentManager manager;
-
-    public static Context context_LabActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fake);
-
-        context_LabActivity = this;
-
-        // 버튼 비활성화 코드
-        //Button btn =(Button)findViewById(R.id.btn1);
-        //btn.setEnabled(false);
+        setContentView(R.layout.activity_lab);
 
 
         bottomNavigationView = findViewById(R.id.navi);
@@ -56,9 +44,7 @@ public class Fake extends AppCompatActivity {
             }
         });
         frag_chart = new Frag_chart();
-        frag_home = new Frag_home();
         frag_mypage = new Frag_mypage();
-        frag_lab = new Frag_lab();
         frag_fake = new Frag_fake();
 
         setFrag(1);  // 첫 화면은 home
