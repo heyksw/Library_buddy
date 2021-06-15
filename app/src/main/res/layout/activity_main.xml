@@ -18,6 +18,46 @@
 
 <!--        android:text="테스트 페이지로 이동"/>-->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3c5fcf">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="라이브버디"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 검색창-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="#BDCDE8">
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="#A8B9DC"
+            android:gravity="center"
+            android:layout_margin="0dp">
+
+        </EditText>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/search3">
+
+        </ImageView>
+
+    </LinearLayout>
+
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"

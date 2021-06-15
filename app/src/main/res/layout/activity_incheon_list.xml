@@ -12,18 +12,19 @@
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:background="#3c5fcf"
         android:gravity="top"
         android:orientation="vertical"
         >
 
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="인천 도서관 리스트"
-            android:textSize="20dp"
+            android:fontFamily="@font/nanumsquareeb"
+            android:textSize="16dp"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
@@ -34,21 +35,22 @@
         android:gravity="center"
         android:background="#BDCDE8">
 
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/search3">
 
-        </ImageView>
-
-        <TextView
+        <EditText
             android:layout_width="300dp"
             android:layout_height="35dp"
             android:background="#A8B9DC"
             android:gravity="center"
             android:layout_margin="0dp">
 
-        </TextView>
+        </EditText>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/search3">
+
+        </ImageView>
 
     </LinearLayout>
 
@@ -75,11 +77,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -93,87 +98,84 @@
 
                     <Button
                         android:id="@+id/univ1"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:background="#FFFFFF"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
                         android:text="경인교육대학교    "
                         android:textColor="#000000"
                         android:textSize="17dp"
                         android:minHeight="0dp"
                         android:minWidth="0dp"
-
                         ></Button>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
-
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
-
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/u1"
                         android:layout_margin="20dp"
-
                         android:layout_gravity="center"
 
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/univ2"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
                         android:text="가천대학교    "
-                        android:background="#FFFFFF"
-                        android:textSize="17dp"
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
+                        android:minWidth="0dp"
+                        ></Button>
 
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -181,44 +183,43 @@
                         android:src="@drawable/u5"
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
+
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/univ3"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:text="안양대학교     "
-                        android:background="#FFFFFF"
-                        android:textSize="17dp"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="안양대학교    "
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
-                    </LinearLayout>
+                        android:minWidth="0dp"
+                        ></Button>
 
-
-
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -226,42 +227,46 @@
                         android:src="@drawable/u7"
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
+
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/univ4"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:text="인천대학교     "
-                        android:background="#FFFFFF"
-                        android:textSize="17dp"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="인천대학교    "
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
+                        android:minWidth="0dp"
+                        ></Button>
 
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -269,43 +274,45 @@
                         android:src="@drawable/u8"
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
+
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/Inha"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:text="인하대학교     "
-                        android:background="#FFFFFF"
-                        android:textSize="17dp"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="인하대학교    "
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
+                        android:minWidth="0dp"
+                        ></Button>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
-                    </LinearLayout>
-
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -313,41 +320,45 @@
                         android:src="@drawable/u6"
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
+
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/univ5"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:text="연세대학교     "
-                        android:textSize="17dp"
-                        android:background="#FFFFFF"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="연세대학교    "
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
-                    </LinearLayout>
+                        android:minWidth="0dp"
+                        ></Button>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -355,41 +366,51 @@
                         android:src="@drawable/u4"
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
+
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/univ6"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:text="한국방송통신대학교     "
-                        android:background="#FFFFFF"
-                        android:textSize="17dp"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="한국방송통신대학교    "
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
-                    </LinearLayout>
+                        android:minWidth="0dp"
+                        ></Button>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
+
+
+
+
+
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/white_round3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
                     >
                     <ImageView
                         android:layout_width="60dp"
@@ -397,33 +418,33 @@
                         android:src="@drawable/u2"
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
+
                         >
                     </ImageView>
+
                     <Button
                         android:id="@+id/univ7"
-                        android:layout_width="250dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
-                        android:text="겐트대학교 글로벌캠퍼스          "
-                        android:background="#FFFFFF"
-                        android:textSize="17dp"
+                        android:background="#F6F8FA"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="겐트대학교 글로벌캠퍼스    "
                         android:textColor="#000000"
+                        android:textSize="17dp"
                         android:minHeight="0dp"
-                        android:minWidth="0dp"/>
+                        android:minWidth="0dp"
+                        ></Button>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#C6C7C8"
-                        android:gravity="center"
-                        >
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arrow2"
-                            android:layout_gravity="center"></ImageView>
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bluearrow2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"/>
 
                 </LinearLayout>
+
+
 
 
 
