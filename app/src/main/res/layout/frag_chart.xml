@@ -24,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:fontFamily="@font/nanumsquareeb"
             android:text="인하대학교"
             android:textColor="#FFFFFF" />
     </LinearLayout>
@@ -45,40 +46,207 @@
             >
 
 
+            <!-- 추천하는 장소 -->
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_recommand"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="추천하는 장소"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/likebutton"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textSize="20dp"
+                    android:textColor="#F9CDCD"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:text="정석학술정보관 - 제1열람실"
+                    android:layout_gravity="center"
+                    />
 
-                <FrameLayout
+
+            </LinearLayout>
+
+
+                <LinearLayout
                     android:id="@+id/제1열람실"
-                    android:layout_width="350dp"
-                    android:layout_height="350dp"
-                    android:background="@drawable/frame_round"
+                    android:layout_width="380dp"
+                    android:layout_height="500dp"
+                    android:background="@drawable/frame_round2"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:backgroundTint="#F1F8FE"
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:text="정석학술정보관-제1열람실"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:textColor="#3c5fcf"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center">
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/pieChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_round"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+                    <!-- chart 사용을 위해서는 build.gradle 파일 2개를 수정해야 함-->
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barChart1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_round"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/제2열람실"
+                android:layout_width="380dp"
+                android:layout_height="500dp"
+                android:background="@drawable/frame_round2"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:backgroundTint="#F1F8FE"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="정석학술정보관-제2열람실"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:textColor="#3c5fcf"
                     android:layout_gravity="center"
-                    android:layout_margin="30dp">
+                    android:layout_margin="5dp"></TextView>
 
-                    <ImageView
-                        android:layout_width="330dp"
-                        android:layout_height="330dp"
-                        android:background="@drawable/chart"
-                        android:src="@drawable/chart"
-                        android:layout_gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center">
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_round"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp">
+                    <!-- chart 사용을 위해서는 build.gradle 파일 2개를 수정해야 함-->
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_round"
+                        />
+                </LinearLayout>
 
 
-                </FrameLayout>
 
-                <FrameLayout
-                    android:id="@+id/제2열람실"
-                    android:layout_width="350dp"
-                    android:layout_height="350dp"
-                    android:background="@drawable/frame_round"
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/해동"
+                android:layout_width="380dp"
+                android:layout_height="500dp"
+                android:background="@drawable/frame_round2"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:backgroundTint="#F1F8FE"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="해동 라운지"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:textColor="#3c5fcf"
                     android:layout_gravity="center"
-                    android:layout_margin="30dp"
-                    >
-                    <ImageView
-                        android:layout_width="330dp"
-                        android:layout_height="330dp"
-                        android:background="@drawable/chart"
-                        android:src="@drawable/chart2"
-                        android:layout_gravity="center"/>
-                </FrameLayout>
+                    android:layout_margin="5dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center">
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_round"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp">
+                    <!-- chart 사용을 위해서는 build.gradle 파일 2개를 수정해야 함-->
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_round"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 
