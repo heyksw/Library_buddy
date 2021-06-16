@@ -57,12 +57,13 @@ public class Frag_mypage extends Fragment {
                             use_time.setText("02:34:0"+timer_sec);
                         }
                         else{
+                            
+                            use_time.setText("02:34:"+timer_sec);
                             if(timer_sec==59){
                                 timer_sec=0;
                             }
-                            use_time.setText("02:34:"+timer_sec);
                         }
-                        
+
                     }
                 };
 
