@@ -147,13 +147,18 @@
 
 
             <LinearLayout
+                android:id="@+id/blueBar"
                 android:layout_width="160dp"
                 android:layout_height="20dp"
-                android:background="@drawable/blue_round">
+                android:background="@drawable/blue_round"
+                android:orientation="horizontal"
+                >
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:id="@+id/redBar"
+                    android:layout_width="80dp"
                     android:layout_height="20dp"
+                    android:orientation="horizontal"
                     android:background="@drawable/red_roung">
 
                 </LinearLayout>
