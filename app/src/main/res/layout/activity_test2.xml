@@ -144,12 +144,15 @@
             android:background="@drawable/white_round">
 
             <LinearLayout
+                android:id="@+id/blueBar2"
                 android:layout_width="140dp"
                 android:layout_height="20dp"
                 android:background="@drawable/blue_round">
 
                 <LinearLayout
-                    android:layout_width="60dp"
+                    android:id="@+id/redBar2"
+                    android:orientation="horizontal"
+                    android:layout_width="70dp"
                     android:layout_height="20dp"
                     android:background="@drawable/red_roung">
 
