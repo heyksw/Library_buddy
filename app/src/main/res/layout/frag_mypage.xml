@@ -172,12 +172,13 @@
                         android:textColor="#000000"/>
 
                     <TextView
+                        android:id="@+id/use_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="23dp"
                         android:fontFamily="@font/nanumsquareeb"
-                        android:text="03:43:55"
+                        android:text="02:43:05"
                         android:textColor="#9C9EF4"
                         android:textSize="16dp" />
 
