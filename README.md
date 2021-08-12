@@ -79,4 +79,13 @@ CCTV 를 확인할 수 있다.
  
 ![1](https://user-images.githubusercontent.com/61315014/129150903-f5f5bcdd-e4ce-47a8-8ac6-8dfec2d1cada.png)
 
+![f1](https://user-images.githubusercontent.com/61315014/129154223-a8d72325-c07d-4dfd-852f-06a5e101d469.png)
+![f2](https://user-images.githubusercontent.com/61315014/129154267-706c7ae8-e368-4e5d-a201-f6a390e5ccca.png)
+![f3](https://user-images.githubusercontent.com/61315014/129154306-8b2b4a85-fcf3-4bd6-9ff1-b150eaebb388.png)
+![f4](https://user-images.githubusercontent.com/61315014/129154360-ae45fe3a-5466-4a47-8b80-bffeb4f09812.png)
+![팝업알림](https://user-images.githubusercontent.com/61315014/129154411-39e47b9c-ca69-4c5d-9324-242d8ff2e24c.png)
+![명세서](https://user-images.githubusercontent.com/61315014/129154451-61d802e3-826a-4d97-beaa-eb0e2bf867be.png)
+![전체스키마](https://user-images.githubusercontent.com/61315014/129154480-27ec5e21-1f8c-43f5-a566-c28ed5640821.png)
+![전체구성도](https://user-images.githubusercontent.com/61315014/129154507-263c0d99-c944-43c9-8910-02e2c8f94016.png)
+
 
