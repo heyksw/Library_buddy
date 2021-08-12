@@ -12,12 +12,12 @@
 이용자들이 각각 구분되고, 관리자는 특정 userID 에 어플리케이션 페이지의 접근 권한을 부여하여
 구분한다.   
 ### 로그인 후, 앱 초기 화면   
-![3](https://user-images.githubusercontent.com/61315014/129151606-0f1ddddc-3578-4782-a843-7930d0440a58.png)
+![l2](https://user-images.githubusercontent.com/61315014/129152564-87c98c68-4b4e-416c-a00a-821b5a74cb90.png)
 - 상단 검색창에 지역 명을 검색하여 찾을 수 있다.   
 - 전국의 도서관 위치를 대한민국 지도로 가시화하여 표현하기 위해 Google Map API 를 사용했다.    
 - 주요 도시들을 Marker 로 설정 후, Marker 클릭 시 해당 지역의 공용공간의 리스트를 출력한다.   
 ### 기관/공용공간 선택 화면
-![4](https://user-images.githubusercontent.com/61315014/129151706-b4393bed-4a6c-4625-9c2b-a1cacd4faa48.png)
+![l3](https://user-images.githubusercontent.com/61315014/129152644-af66d940-a954-4925-9881-916d1f9b5949.png)
 1. 대학 리스트 화면   
 - 상단 검색창에 대학(기관) 명을 검색하여
 찾을 수 있다.
