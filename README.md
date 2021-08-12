@@ -82,7 +82,7 @@ CCTV 를 확인할 수 있다.
 ## 전체 스키마
 ![전체스키마](https://user-images.githubusercontent.com/61315014/129154480-27ec5e21-1f8c-43f5-a566-c28ed5640821.png)
 
-## 공용공간의 사석화 원인 및 문제점 파악
+## 공용공간의 사석화 원인 및 문제점 파악 - 공용공간 부족
  
 ![1](https://user-images.githubusercontent.com/61315014/129150903-f5f5bcdd-e4ce-47a8-8ac6-8dfec2d1cada.png)
 
