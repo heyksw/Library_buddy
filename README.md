@@ -14,4 +14,5 @@
 인건비를 줄여 궁극적으로는 공용공간의 자동화된 관리와 효율적인 사용을 목적으로 한다
    
 ## 2. 시장 및 관련 서비스 조사
-https://github.com/heyksw/Library_buddy/issues/1#issue-968190505
+![깃허브용](https://user-images.githubusercontent.com/61315014/129150623-61683715-cb2b-4fbd-9e95-1fb710e42bb1.png)
+
