@@ -4,7 +4,7 @@
    
 ## 앱 기능 및 UI
 ### 앱 로그인 화면
-![2](https://user-images.githubusercontent.com/61315014/129151296-12a5a7b6-3972-43f4-a19e-27253b2ee8d4.png)
+![l1](https://user-images.githubusercontent.com/61315014/129152266-bb1f327b-024b-45ea-b9e2-0f7a846fb943.png)
 - 간편한 회원 가입 및 로그인과 같은 용이한 접근성을 위해 카카오톡 로그인 API 를 활용하여
 로그인을 구현했다.   
 - 이용자가 로그인을 하게 되면 DB 에서 로그인 시 자동으로 부여되는 랜덤 넘버인 userID 로
