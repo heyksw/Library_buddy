@@ -1,5 +1,5 @@
 # 라이브버디 (Libary + Buddy)
-## AI 기반 사석화 방지 통합 관리 시스템
+## ( AI 기반 사석화 방지 통합 관리 시스템 )
 (The full code is in the 'master branch')
 
 ## 1. 프로젝트 개요
