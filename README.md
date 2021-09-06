@@ -1,5 +1,5 @@
 # 라이브버디 (Libary + Buddy)
-## [ AI 기반 사석화 방지 통합 관리 시스템 ]
+## [ AI 기반 객체인식과 IoT 센서 및 데이터 시각화를 활용한 통합 좌석 관리 시스템]
 - The full code is in the 'master branch'
 - This is a simplified one. I uploaded the full final report file.
 - 2021.08.19 지식재산권 등록 접수 완료 (인하대학교 IPMS)
