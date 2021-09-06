@@ -2,7 +2,7 @@
 ## [ AI 기반 사석화 방지 통합 관리 시스템 ]
 - The full code is in the 'master branch'
 - This is a simplified one. I uploaded the full final report file.
-   
+- 2021.08.19 지식재산권 등록 완료 (인하대학교 IPMS)
 ## 📱 앱 기능 및 UI
 ### 1. 앱 로그인 화면
 ![ll1](https://user-images.githubusercontent.com/61315014/129152446-2606ef67-e373-437f-b303-719f194a9240.png)
